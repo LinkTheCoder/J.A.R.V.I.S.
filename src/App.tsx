@@ -1,11 +1,11 @@
 import './App.css'
-import ChatBot from './MyChatBot'
+import Bot from './Bot'
 
 function App() {
 
   return (
     <>
-  <ChatBot/>
+  <Bot/>
     </>
   )
 }

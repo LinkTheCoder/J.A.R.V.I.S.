@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -5,51 +9,32 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-color: black;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
 
-a {
-  font-weight: 500;
-  color: #6bd7ef;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #a9edfc;
-}
-
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-  background-image: url("./assets/Wallpaper.jpg");
+  background-image: url('./img/bg.jpg');
   background-size: cover;
   background-position: center;
 }
 
-.stickers
-{
-  width: 200px;
-  margin-top: 20px;
-  margin-left: 20px;
+body {
+  max-width: 450px;
+  margin: auto;
 }
 
-.fade-in {
-  opacity: 0;
-  animation: fade-in 1s ease forwards;
-}
+.glowing-text {
+    text-shadow: 0 0 2px #fff, 0 0 5px #2dd4bf, 0 0 10px #2dd4bf, 0 0 10px #2dd4bf;
+  }
 
-@keyframes fade-in {
-  from {
-    opacity: 0;
+  .hide-scrollbar {
+    -ms-overflow-style: none;  /* for Internet Explorer 10+ */
+    scrollbar-width: none;  /* for Firefox */
   }
-  to {
-    opacity: 1;
+  
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;  /* for Chrome, Safari, and Opera */
   }
-}
